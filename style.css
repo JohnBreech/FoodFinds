@@ -1,8 +1,39 @@
-/*
-HEADER: font Poppins, semi bold
-DEFAULT: font Nunito
-*/
+/* Fonts (Refer to the Figma Page for Proper Font Variety */
 
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("fonts/Poppins-SemiBold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url("fonts/Poppins-ExtraBold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-Black;
+    src: url("fonts/Nunito-Black.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-Medium;
+    src: url("fonts/Nunito-Medium.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-Bold;
+    src: url("fonts/Nunito-Bold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-ExtraBold;
+    src: url("fonts/Nunito-ExtraBold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-SemiBold;
+    src: url("fonts/Nunito-SemiBold.ttf") format(truetype);
+}
 
 :root {
     --primary-color: #006DA8;
@@ -61,6 +92,7 @@ DEFAULT: font Nunito
         margin-top: 20px;
     }
     #cta-browse-stalls {
+        font-family: Nunito-Bold;
         display: flex;
         margin-top: 0.25rem;
         padding: 15px 30px;
@@ -70,7 +102,6 @@ DEFAULT: font Nunito
         border-radius: 10px;
         border: none;
         font-size: 1rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
         cursor: pointer;
     }
@@ -78,6 +109,7 @@ DEFAULT: font Nunito
         background-color: var(--primary-color2);
     }
     #cta-learn-more {
+        font-family: Nunito-Bold;
         display: flex;
         margin-top: 0.25rem;
         padding: 15px 30px;
@@ -87,7 +119,6 @@ DEFAULT: font Nunito
         border-radius: 10px;
         border: none;
         font-size: 1rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
         cursor: pointer;
     }
@@ -132,7 +163,9 @@ DEFAULT: font Nunito
         width: 100%;
         height: auto;
     }
+
     .search {
+        font-family: Nunito-Medium;
         width: 100%;
         padding: 15px 20px;
         border: none;
