@@ -157,7 +157,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 2rem 6rem 0.25rem;
+    padding: 2rem 5rem 0.25rem;
 }
     .searchbar {
         width: 100%;
@@ -178,7 +178,7 @@
 .map-shortcut {
     width: 100%;
     height: auto;
-    padding: 0.25rem 6rem 2rem;
+    padding: 0.25rem 5rem 2rem;
 }
     .map-icon {
         display: flex;
@@ -201,10 +201,12 @@
     .map-icon h1 {
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
+        font-family: Poppins-SemiBold;
     }
     .map-icon p {
         font-size: 1.2rem;
         margin-bottom: 1rem;
+        font-family: Nunito-Bold;
     }
     .cta-view-map {
         display: flex;
@@ -224,4 +226,120 @@
     }
     .cta-view-map:hover {
         background-color: var(--primary-color2);
+    }
+
+/*FOOD STALLS*/
+.food-stalls {
+    width: 100%;
+    height: auto;
+    padding: 0.25rem 5rem 2rem;
+}
+    .stall-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .stall-header h1 {
+        font-family: Nunito-ExtraBold;
+        font-size: 2rem;
+        background-image: linear-gradient(90deg, var(--primary-color2), var(--primary-color));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .stall-header span a {
+        font-family: Nunito-SemiBold;
+        font-size: 1rem;
+        color: var(--secondary-color);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .stall-header span a:hover {
+        text-decoration: underline;
+    }
+    .stalls-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .stall-card {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        background-color: #112936;
+    }
+    .stall-image {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .stall-info {
+        padding: 10px;
+        background-color: var(--accent-color);
+        color: #112936;
+        font-family: Nunito-Medium;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+/*CATEGORIES*/
+.categories {
+    width: 100%;
+    height: auto;
+    padding: 0.25rem 5rem 4rem;
+}
+    .category-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .category-header h1 {
+        font-family: Nunito-ExtraBold;
+        font-size: 2rem;
+        background-image: linear-gradient(90deg, var(--primary-color2), var(--primary-color));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .category-header span a:hover {
+        text-decoration: underline;
+    }
+    .category-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        gap: 1em;
+    }
+    .category-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: auto;
+        cursor: pointer;
+        background-color: white;
+    }
+    .category-image {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        background-color: #112936;
+    }
+    .category-info {
+        margin-top: 0.5rem;
+        font-family: Nunito-Medium;
+        font-size: 1rem;
+        color: #112936;
     }
