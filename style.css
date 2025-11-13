@@ -41,16 +41,19 @@ DEFAULT: font Nunito
     background-size: cover;
 }
 
-    .logo {
+    #logo-left {
+        display: flex;
         max-width: 300px;
         height: auto;
         width: 100%;
+        align-self: left;
     }
-    .tagline {
-        color: var(--accent-color);
-        font-size: 1.5rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 400;
+    #logo-center {
+        display: none;
+        max-width: 300px;
+        height: auto;
+        width: 100%;
+        align-self: center;
     }
     .cta-buttons {
         display: flex;
@@ -65,7 +68,7 @@ DEFAULT: font Nunito
         color: var(--accent-color);
         border-radius: 10px;
         border: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
         cursor: pointer;
@@ -78,14 +81,35 @@ DEFAULT: font Nunito
         color: var(--accent-color);
         border-radius: 10px;
         border: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
         cursor: pointer;
     }
     @media screen and (max-width: 600px) {
-        .tagline {
-            font-size: 1rem;
+        .banner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 2rem 2rem;
+            background-image: url(images/banner-bg-mobile.png);
+        }
+        #logo-left {
+            display: none;
+        }
+        #logo-center {
+            display: flex;
+        }
+        .cta-buttons {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 0.2rem;
+        }
+        #cta-browse-stalls, #cta-learn-more {
+            padding: 10px 20px;
+            font-size: 0.8rem;
         }
     }
 
@@ -108,3 +132,23 @@ DEFAULT: font Nunito
         font-size: 1rem;
         box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
     }
+
+/*MAP*/
+.map-shortcut {
+    width: 100%;
+    height: 40vh;
+    padding: 2rem 6rem 4rem;
+}
+
+.map-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-image: url(images/map-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
