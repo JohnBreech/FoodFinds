@@ -102,7 +102,6 @@
         border-radius: 10px;
         border: none;
         font-size: 1rem;
-        font-weight: 600;
         cursor: pointer;
     }
     #cta-browse-stalls:hover {
@@ -119,7 +118,6 @@
         border-radius: 10px;
         border: none;
         font-size: 1rem;
-        font-weight: 600;
         cursor: pointer;
     }
     #cta-learn-more:hover {
@@ -162,12 +160,24 @@
     .searchbar {
         width: 100%;
         height: auto;
+        position: relative;
+    }
+
+    .search-icon {
+        position: absolute; 
+        left: 25px; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        width: 18px; 
+        height: 18px; 
+        opacity: 0.6; 
     }
 
     .search {
         font-family: Nunito-Medium;
         width: 100%;
         padding: 15px 20px;
+        padding-left: 4.4rem;
         border: none;
         border-radius: 30px;
         font-size: 1rem;
@@ -193,10 +203,14 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-    .map-icon h1, 
+    .map-icon h1 {
+        font-family: Poppins-SemiBold;
+        color: white;
+    } 
     .map-icon p {
         color: var(--accent-color);
         text-align: left; 
+        font-family: Nunito-Medium;
     }
     .map-icon h1 {
         font-size: 2.5rem;
@@ -210,7 +224,7 @@
     }
     .cta-view-map {
         display: flex;
-        width: 20vh;
+        width: 17vh;
         margin-top: 0.25rem;
         padding: 15px 30px;
         background-color: var(--primary-color);
@@ -220,9 +234,12 @@
         border: none;
         font-size: 1rem;
         text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 600;
+        font-family: Nunito-Bold;
         cursor: pointer;
+    }
+    .arrow-icon {
+        position: absolute;
+        padding-left: 5.6rem;
     }
     .cta-view-map:hover {
         background-color: var(--primary-color2);
