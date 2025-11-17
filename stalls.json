@@ -1,0 +1,15 @@
+[
+    {
+        "image": "images/matcha_cafe_front_image.jpg",
+        "name": "Matcha Cafe",
+        "category": [" Coffee", "Halal", "Bread"],
+        "floor": 1
+    },
+
+    {
+        "image": "images/easybite.svg", 
+        "name": "Easy Bites",
+        "category": [" Chicken", " Fries"],
+        "floor": 2
+    }
+]
