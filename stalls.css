@@ -224,6 +224,13 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         align-items: start;
     }
+    .stalls-group2 {
+        display: grid;
+        width: 100%;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        align-items: start;
+    }
 
     .stall-card {
         border-radius: 15px;
@@ -268,6 +275,10 @@ body {
 
     @media screen and (max-width: 728px) {
         .stalls-group {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .stalls-group2 {
             grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
         }
