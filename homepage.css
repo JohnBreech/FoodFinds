@@ -107,6 +107,7 @@ body {
         border: none;
         font-size: 1rem;
         cursor: pointer;
+        text-decoration: none;
     }
     #cta-browse-stalls:hover {
         background-color: var(--primary-color2);
@@ -123,6 +124,7 @@ body {
         border: none;
         font-size: 1rem;
         cursor: pointer;
+        text-decoration: none;
     }
     #cta-learn-more:hover {
         background-color: var(--secondary-color2);
@@ -255,6 +257,7 @@ body {
         text-align: center;
         font-family: Nunito-Bold;
         cursor: pointer;
+        text-decoration: none;
     }
     .arrow-icon {
         position: static;

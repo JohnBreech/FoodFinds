@@ -32,9 +32,7 @@ function displayStalls(list) {
         const card = document.createElement('div');
         card.classList.add('stall-card');
 
-        const categories = Array.isArray(stall.category)
-            ? stall.category.join(', ')
-            : stall.category ?? '';
+        const categories = Array.isArray(stall.category) ? stall.category.join(', ') : stall.category ?? '';
 
         card.innerHTML = `
             <div class="stall-image">
@@ -53,15 +51,22 @@ function displayStalls(list) {
         } else if (stall.floor === 2) {
             stallsGroup2.appendChild(card);
         }
-
+        
         stalls.push({
             name: stall.name,
             category: stall.category,
             floor: stall.floor,
             element: card
-        });
+        }); 
     });
+    stalls.forEach(stall => {
+        stall.element.addEventListener('click', () => {
+            window.location.href = `${stall.name}.html`;
+    })
+
+});
 }
+
 function runSearch(searchTerm) {
     stalls.forEach(stall => {
         const match =
@@ -78,6 +83,29 @@ if (window.location.href.includes('stalls.html')) {
         runSearch(e.target.value.toLowerCase());
     });
 }
+
+if (window.location.href.includes('homepage.html')) {
+    const categoryCards = document.querySelectorAll('.category-card');
+
+    categoryCards.forEach(card => {
+        const categoryName = card.querySelector('.category-name'); // text inside the card
+        card.addEventListener('click', () => {
+            window.location.href = `stalls.html?search=${encodeURIComponent(categoryName.textContent)}`;
+        });
+    });
+
+    const stallCards = document.querySelectorAll('.stall-card');
+
+    stallCards.forEach(card => {
+        const stallName = card.querySelector('.stall-name').textContent.trim();
+
+        card.addEventListener('click', () => {
+            window.location.href = `${stallName}.html`;
+        });
+    });
+
+}
+
 
 if (searchInput) {
     searchInput.addEventListener('keypress', k => {

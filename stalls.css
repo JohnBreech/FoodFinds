@@ -54,6 +54,10 @@ body {
     background-color: #ebf0f3;
 }
 
+a {
+    
+}
+
 /*NAVIGATOR*/
 .nav {
     width: 100%;
@@ -153,6 +157,8 @@ body {
         border: none;
         font-size: 1rem;
         cursor: pointer;
+        text-decoration: none;
+        
     }
      #cta-browse-stalls:hover {
         background-color: var(--primary-color2);
@@ -291,4 +297,110 @@ body {
 
 .hide {
     display: none;
+}
+
+.footer {
+    margin-top: 5rem;
+    color: white;
+    width: 100%;
+    background-image: url(images/footer-bg.svg);
+    background-color: #00517D;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 5rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 2rem 5rem;
+  margin: auto;
+  align-items: center;
+}
+
+.footer-submark {
+    max-width: 150px;
+}
+
+.footer h1{
+    font-family: Poppins-SemiBold;
+}
+
+.footer h3{
+    font-family: Poppins-SemiBold;
+}
+
+.footer p {
+    font-family: Nunito-Medium;
+}
+
+.footer-links ul li {
+    font-family: Nunito-Medium;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-contacts ul li {
+    font-family: Nunito-Medium;
+    list-style: none;
+    margin-top: 1rem;
+}
+@media (max-width: 992px) {
+    .footer {
+        padding: 2rem 3rem;
+    }
+
+    .footer-container {
+        padding: 2rem 3rem;
+        gap: 30px;
+    }
+}
+
+/* MOBILE (<= 768px) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-links, 
+    .footer-contacts {
+        text-align: center;
+    }
+
+    .footer-submark {
+        max-width: 120px;
+    }
+}
+@media (max-width: 728px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .footer-links, 
+    .footer-contacts {
+        text-align: left;
+    }
+
+    .footer-submark {
+        max-width: 120px;
+    }
 }
