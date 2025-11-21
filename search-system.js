@@ -18,3 +18,12 @@ categoryCards.forEach(card => {
         window.location.href = `stalls.html?search=${encodeURIComponent(categoryName)}`;
     });
 });
+
+// go to stalls profile when a stall is pressed/clicked with the same name
+const stallCards =  document.querySelectorAll('.stall-card');
+stallCards.forEach(stall => {
+    stall.addEventListener('click', () => {
+        const stallName = stall.querySelector('.stall-name').textContent.trim();
+        window.location.href = `stall_profiles/${stallName}.html`;
+    })
+})

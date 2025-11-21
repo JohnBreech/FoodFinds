@@ -13,7 +13,7 @@ const stallsData = [
         "floor": 1
     },
     {
-        "images": "images/stalls/matcha_cafe_front_image.jpg",
+        "images": "images/stalls/alcuis.svg",
         "name": "Alcuis Food",
         "category": ["Filipino", "Siomai", "Beef", "Chicken", "Bread", "Burgers", "Coffee"],
         "floor": 1
@@ -25,7 +25,7 @@ const stallsData = [
         "floor": 2
     },
     {
-        "images": "images/stalls/matcha_cafe_front_image.jpg",
+        "images": "images/stalls/gobblehaus.svg",
         "name": "Gobble House",
         "category": ["Beef", "Chicken", "Rice", "Filipino", "Drinks", "Sweets", "Fruits", "Desserts", "Halal"],
         "floor": 2
