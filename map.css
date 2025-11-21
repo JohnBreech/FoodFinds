@@ -275,12 +275,14 @@ body {
     font-family: Nunito-Medium;
     list-style: none;
     margin-top: 1rem;
+    text-align: left;
 }
 
 .footer-links a {
     color: white;
     text-decoration: none;
     transition: 0.3s ease;
+    text-align: left;
 }
 
 .footer-links a:hover {
@@ -291,6 +293,7 @@ body {
     font-family: Nunito-Medium;
     list-style: none;
     margin-top: 1rem;
+    text-align: left;
 }
 @media (max-width: 992px) {
     .footer {
