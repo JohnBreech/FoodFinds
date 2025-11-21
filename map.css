@@ -177,7 +177,7 @@ body {
 }
 
 .footer-container {
-    display: flex;
+    display: center;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
