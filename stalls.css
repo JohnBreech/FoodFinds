@@ -64,6 +64,25 @@ nav {
     z-index: 1000;
 }
 
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    max-width: 150px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
 nav ul {
     width: 100%;
     list-style: none;
@@ -99,12 +118,6 @@ nav a:hover {
 nav li:first-child {
     margin-right: auto;
     padding-left: 20px;
-}
-
-nav li:first-child a { 
-    font-family: "Poppins-ExtraBold";
-    font-size: 20px;
-    text-transform: none;
 }
 
 /* Sidebar (Mobile) */
@@ -143,6 +156,8 @@ nav li:first-child a {
 @media (min-width: 801px) {
     .menu-icon { display: none; }
 }
+
+
 
 /*BANNER*/
 .banner {
