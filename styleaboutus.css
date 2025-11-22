@@ -141,7 +141,6 @@ nav li:first-child {
     justify-content: center;
 }
 
-/* Optional: If you want the big logo inside the hero like the image */
 .hero-logo {
     width: 300px;
     max-width: 80%;
@@ -338,7 +337,6 @@ details.faq[open] {
 
 /* ---------- FOOTER ---------- */
 .footer {
-    margin-top: 5rem;
     color: white;
     width: 100%;
     background-image: url(images/footer-bg.svg);
