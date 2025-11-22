@@ -257,29 +257,6 @@ nav li:first-child a {
     width: 50%;
 }
 
-.footer {
-    background-color: var(--primary-color);
-    padding: 2rem 1rem;
-    color: white;
-    text-align: center;
-}
-
-.footer-container {
-    display: center;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.footer-links ul {
-    padding: 0;
-}
-
-.footer-links ul li {
-    list-style: none;
-}
-
 @media (max-width: 1024px) {
     .first-floor, .second-floor, .sauras-extention {
         flex-direction: column;
