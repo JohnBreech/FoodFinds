@@ -154,7 +154,7 @@ nav li:first-child a {
     background-image: url(images/mapbg.svg);
     background-size: cover;
     background-position: center;
-    padding: 2rem 9rem 4rem;
+    padding: 2rem 9rem 7rem;
 }
 
 .header {
@@ -227,6 +227,7 @@ nav li:first-child a {
 
 .map-info {
     margin: auto;
+    margin-left: 1.5rem;
     flex: 1 1 300px;
     color: white;
 }
@@ -265,6 +266,9 @@ nav li:first-child a {
         flex-direction: column;
         align-items: center;
     }
+    .first-floor {
+        margin-top: 0.2rem;
+    }
     .second-floor {
         flex-direction: column-reverse;
     }
@@ -274,24 +278,31 @@ nav li:first-child a {
 }
 
 @media (max-width: 600px) {
+    .header {
+        margin-bottom: 0.2rem;
+    }
+    .first-floor {
+        margin-top: 0.2rem;
+    }
     .placeholder {
-        padding: 2rem 2rem;
+        padding: 2rem 2rem 4rem;
     }
     .header h1 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     .header h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
     .floor-header {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     .floor-descrip {
         font-size: 0.9rem;
         text-align: center;
+        padding-bottom: 2rem;
     }
     .map-info ul li {
         width: 100%;
