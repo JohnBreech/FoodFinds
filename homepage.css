@@ -55,10 +55,104 @@ body {
 }
 
 /*NAVIGATOR*/
-.nav {
+/* ---------- NAVIGATION ---------- */
+nav {
+    background-color: var(--primary-color); /* Updated to Blue to match image top bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    max-width: 120px;
+}
+
+nav ul {
     width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
     height: 60px;
-    background-color: var(--primary-color);
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white; /* Text white to contrast blue nav */
+    font-family: "Nunito-SemiBold", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--secondary-color);
+}
+
+nav li:first-child {
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+/* Sidebar (Mobile) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh; 
+    width: 250px;
+    z-index: 99999;
+    background-color: var(--primary-color2);
+    background: hsl(201, 100%, 33%, 0.8); /* softer glass look */
+    box-shadow: -10px 0 5px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar a {
+    color: var(--accent-color); /* Sidebar links dark */
+    width: 100%;
+}
+
+#x-butt {
+    fill: var(--accent-color);
+}
+
+.menu-icon a svg {
+    fill: var(--accent-color);
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile { display: none; }
+}
+@media (min-width: 801px) {
+    .menu-icon { display: none; }
 }
 
 /*BANNER*/
