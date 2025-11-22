@@ -89,8 +89,8 @@ nav li:first-child a {
     width: 250px;
     z-index: 99999;
     background-color: var(--primary-color2);
-    background: rgba(255, 255, 255, 0.15); /* softer glass look */
-    box-shadow: -10px 0 10px rgba(0,0,0,0.15);
+    background: hsl(201, 100%, 33%, 0.8); /* softer glass look */
+    box-shadow: -10px 0 5px rgba(0,0,0,0.15);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -98,8 +98,16 @@ nav li:first-child a {
 }
 
 .sidebar a {
-    color: var(--text-color); /* Sidebar links dark */
+    color: var(--accent-color); /* Sidebar links dark */
     width: 100%;
+}
+
+#x-butt {
+    fill: var(--accent-color);
+}
+
+.menu-icon a svg {
+    fill: var(--accent-color);
 }
 
 @media (max-width: 800px) {
