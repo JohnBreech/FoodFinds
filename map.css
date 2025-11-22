@@ -56,7 +56,7 @@ body {
 
 /* ---------- NAVIGATION ---------- */
 nav {
-    background-color: var(--primary-color); /* Updated to Blue to match image top bar */
+    background-color: var(--primary-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -88,7 +88,7 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: white; /* Text white to contrast blue nav */
+    color: white;
     font-family: "Nunito-SemiBold", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -120,7 +120,7 @@ nav li:first-child a {
     width: 250px;
     z-index: 99999;
     background-color: var(--primary-color2);
-    background: hsl(201, 100%, 33%, 0.8); /* softer glass look */
+    background: hsl(201, 100%, 33%, 0.8);
     box-shadow: -10px 0 5px rgba(0,0,0,0.15);
     display: none;
     flex-direction: column;
@@ -129,7 +129,7 @@ nav li:first-child a {
 }
 
 .sidebar a {
-    color: var(--accent-color); /* Sidebar links dark */
+    color: var(--accent-color);
     width: 100%;
 }
 
@@ -175,16 +175,18 @@ nav li:first-child a {
 }
 
 .header h2 {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     background-image: linear-gradient(90deg, #45BEFF, #6FCBFC, #F4F4F4, #F4F4F4);
 }
 
 .header h1 {
+    font-size: clamp(2rem, 4vw, 4rem);
     background-image: linear-gradient(90deg, #FC9C1D, #F9B861, #F7CE96, #F4F4F4);
 }
 
 .header p {
     font-family: Nunito-Bold;
-    font-size: 1rem;
+    font-size: clamp(1.2rem, 2.2vw, 1.2rem);
     color: var(--accent-color);
     margin-top: 0.5rem;
 }
@@ -224,6 +226,7 @@ nav li:first-child a {
 }
 
 .map-info {
+    margin: auto;
     flex: 1 1 300px;
     color: white;
 }
@@ -233,7 +236,7 @@ nav li:first-child a {
     background-image: linear-gradient(90deg, #FC9C1D, #F9B861, #F7CE96, #F4F4F4);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
     margin-bottom: 0.5rem;
 }
 
