@@ -78,7 +78,9 @@ nav {
 }
 
 .nav-logo {
-    max-width: 120px;
+    max-width: 150px;
+    width: 100%;
+    padding-left: 1rem;
 }
 
 nav ul {
