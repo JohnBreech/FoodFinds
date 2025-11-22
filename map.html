@@ -53,7 +53,7 @@
         <div class="floors">
             <div class="first-floor">
                 <div class="map-image">
-                    <img src="images/first-floor-sauras.svg" alt="">
+                    <img src="images/first-floor-sauras.svg" alt="Floor Plan of Saura's Hall First Floor as of 2025">
                 </div>
 
                 <div class="map-info">
@@ -98,19 +98,19 @@
                 </div>
 
                 <div class="map-image">
-                    <img src="images/second-floor-sauras.svg" alt="">
+                    <img src="images/second-floor-sauras.svg" alt="Floor Plan of Saura's Hall Second Floor as of 2025">
                 </div>
             </div>
             </div>
 
             <div class="sauras-extention">
                 <div class="map-image">
-                    <img src="images/sauras-extension.svg" alt="">
+                    <img src="images/sauras-extension.svg" alt="Floor Plan of Saura's Extension as of 2025">
                 </div>
 
                 <div class="map-info">
-                    <h1 class="floor-header">1st Floor (Saura's Extention)</h1>
-                    <p class="floor-descrip">The 1st Floor Extention of the Saura’s Hall Consists of 4 Stalls from the Ateneo de Zamboanga EntreHub:</p>
+                    <h1 class="floor-header">1st Floor (Saura's Extension)</h1>
+                    <p class="floor-descrip">The 1st Floor Extension of the Saura’s Hall Consists of 4 Stalls from the Ateneo de Zamboanga EntreHub:</p>
 
                     <ul>
                         <li>• Three Sixty Degrees</li>
@@ -167,6 +167,13 @@
         
     </footer>
 
+    
+    <!-- IMAGE MODAL DIV -->
+    <div id="imgModal" class="img-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
     <script>
 
         function showSidebar(){
@@ -178,6 +185,35 @@
         sidebar.style.display = 'none'
     }
 
+    // ===== IMAGE MODAL ===== //
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close-modal");
+
+    // Select all map images
+    const images = document.querySelectorAll(".map-image img");
+
+    images.forEach(img => {
+        img.addEventListener("click", () => {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        });
+    });
+
+    // Close modal on X click
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // Close on outside click
+    modal.onclick = function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+
     </script>
+
 </body>
+
 </html>
