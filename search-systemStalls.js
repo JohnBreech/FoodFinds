@@ -3,19 +3,19 @@ const stallsData = [
     {
         "images": "images/stalls/matcha_cafe_front_image.jpg",
         "name": "Matcha Cafe",
-        "category": ["Sweets", "Drinks", "Chicken", "Fries", "Burgers", "Coffee", "Halal"],
+        "category": ["Sweets", "Drinks", "Chicken", "Fries", "Burgers", "Coffee", "Halal", "Beverages", "Desserts"],
         "floor": 1
     },
     {
         "images": "images/stalls/lavivienda.jpg",
         "name": "Grilled Shawarma (La Vivienda)",
-        "category": ["Shawarma", "Beef", "Chicken", "Fries", "Rice", "Halal"],
+        "category": ["Shawarma", "Beef", "Chicken", "Fries", "Rice", "Halal", "Beverages"],
         "floor": 1
     },
     {
         "images": "images/stalls/alcuis.svg",
         "name": "Alcuis Food",
-        "category": ["Filipino", "Siomai", "Beef", "Chicken", "Bread", "Burgers", "Coffee"],
+        "category": ["Filipino", "Siomai", "Beef", "Chicken", "Bread", "Burgers", "Coffee", "Beverages"],
         "floor": 1
     },
     {
@@ -27,7 +27,7 @@ const stallsData = [
     {
         "images": "images/stalls/gobblehaus.svg",
         "name": "Gobble House",
-        "category": ["Beef", "Chicken", "Rice", "Filipino", "Drinks", "Sweets", "Fruits", "Desserts", "Halal"],
+        "category": ["Beef", "Chicken", "Rice", "Filipino", "Drinks", "Sweets", "Fruits", "Desserts", "Halal", "Beverages"],
         "floor": 2
     }
 ];
