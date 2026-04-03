@@ -1,0 +1,16 @@
+[
+    {
+        "image": "images/stalls/matcha_cafe_front_image.jpg",
+        "name": "Matcha Cafe",
+        "category": [" Coffee", "Halal", "Bread"],
+        "floor": 1
+    },
+
+    {
+        "image": "images/stalls/easybite.svg", 
+        "name": "Easy Bite",
+        "category": [" Chicken", " Fries", " Halal"],
+        "floor": 2
+    }
+
+]

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.svg">
+    <title>FoodFinds • About Us</title>
+    <link rel="stylesheet" href="styleaboutus.css" />
+    <meta name="description" content="Learn more about FoodFinds, the team behind it, and answers to frequently asked questions." />
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+     <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg id="x-butt" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M480 606 270 816l-42-42 210-210-210-210 42-42 210 210 210-210 42 42-210 210 210 210-42 42-210-210Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stalls.html">Stalls</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+        
+        <div class="main-nav">
+            <div><a  href="index.html"><img class="nav-logo" src="images/navLogo.svg"></a></div>
+            
+            <div class="nav-links">
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="stalls.html">Stalls</a></li>
+                    <li class="hideOnMobile"><a href="map.html">Map</a></li>
+                    <li class="hideOnMobile"><a href="aboutus.html" class="active">About Us</a></li>  
+                
+                 <li class="menu-icon" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                    </svg>
+                </a>
+                </li> 
+            </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <div class="header-background"></div>
+
+    <!-- ABOUT SECTION -->
+    <section class="section">
+        <div class="container about">
+
+            <div class="about-image">
+                <div class="circle"></div>
+            </div>
+
+            <div class="about-content">
+                <h1>About Us</h1>
+
+                <p>
+                    FoodFinds connects students and the campus community to nearby food stalls,
+                    vendors, and pop-ups—making great food easy to discover. Our mission is to
+                    reduce food waste, promote local businesses, and help you find delicious
+                    options in just a few taps.
+                </p>
+
+                <p>
+                    We curate menus, locations, and hours in one place so you can focus on what
+                    matters: eating well without the hassle. Whether you’re on a budget or in a
+                    hurry, FoodFinds puts access to food at your fingertips.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEVELOPERS SECTION -->
+<section class="developers-section">
+    <h2>Developers</h2>
+    <p>The team behind FoodFinds</p>
+
+    <div class="developer-grid">
+        
+        <div class="developer-card">
+            <div class="dev-img"><img src="aboutus-images/JB_PFP.jpg" alt="John Breech" class="dev-pfp"></div>
+            <div class="dev-name">John Breech</div>
+        </div>
+
+        <div class="developer-card">
+            <div class="dev-img"><img src="aboutus-images/NAT_PFP.jpg" alt="Nathalie Jean Cornella" class="dev-pfp"></div>
+            <div class="dev-name">Nathalie Jean Cornella</div>
+        </div>
+
+        <div class="developer-card">
+            <div class="dev-img"><img src="aboutus-images/ASH_PFP.jpg" alt="Nathalie Jean Cornella" class="dev-pfp"></div>
+            <div class="dev-name">Ashby Stefano Matias</div>
+        </div>
+
+        <div class="developer-card">
+            <div class="dev-img"><img src="aboutus-images/OMAR_PFP.jpg" alt="Omar Baluan" class="dev-pfp"></div>
+            <div class="dev-name">Omar Baluan</div>
+        </div>
+
+        <div class="developer-card">
+            <div class="dev-img"><img src="aboutus-images/REMMA_PFP.jpg" alt="Ameer Mohammad Ali" class="dev-pfp"></div>
+            <div class="dev-name">Ameer Mohammad Ali</div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- FAQ SECTION -->
+    <section id="faqs" class="section faqs">
+        <div class="container">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-list">
+
+                <details class="faq">
+                    <summary>
+                        <span>What is FoodFinds?</span>
+                        <span aria-hidden>▾</span>
+                    </summary>
+                    <div class="faq-body">
+                        FoodFinds is a centralized digital directory for the Ateneo de Zamboanga University 
+                        cafeteria. We help students and faculty browse menus, compare prices, and check 
+                        operating hours remotely, saving you the hassle of walking between floors to decide what to eat.
+                    </div>
+                </details>
+
+                <details class="faq">
+                    <summary>
+                        <span>Why are some cafeteria stalls missing?</span>
+                        <span aria-hidden>▾</span>
+                    </summary>
+                    <div class="faq-body">
+                        We are currently in the prototype phase (School Year 2025-2026), featuring 
+                        5 select food stalls. We plan to expand our directory to include all authorized 
+                        cafeteria vendors in future updates as the project develops.
+                    </div>
+                </details>
+
+                <details class="faq">
+                    <summary>
+                        <span>Can I order food directly through the website?</span>
+                        <span aria-hidden>▾</span>
+                    </summary>
+                    <div class="faq-body">
+                        No. FoodFinds is currently an <strong>informational platform only</strong>. 
+                        Our goal is to help you decide what to eat before you arrive at the cafeteria. 
+                        You will still need to visit the stall physically to purchase your meal.
+                    </div>
+                </details>
+
+                <details class="faq">
+                    <summary>
+                        <span>Who is FoodFinds designed for?</span>
+                        <span aria-hidden>▾</span>
+                    </summary>
+                    <div class="faq-body">
+                        FoodFinds is built for the entire <strong>Ateneo de Zamboanga University community</strong>. 
+                        Whether you are a student, faculty member, or staff, our goal is to make your dining 
+                        experience easier by putting the cafeteria directory in your pocket.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <img src="images/SUBMARK.svg" class="footer-submark">
+                <h1>Food Finds</h1>
+                <p>Atenean Food At Your Fingertips</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stalls.html">Stalls</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contacts">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Ateneo de Zamboanga University, La Purisima 7000</li>
+                    <li>(+63) 926 3876 385</li>
+                    <li>co250178@adzu.edu.ph</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- NAVBAR JS -->
+    <script>
+        function showSidebar() {
+            document.querySelector('.sidebar').style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            document.querySelector('.sidebar').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

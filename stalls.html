@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="stalls.css">
+    <title>FoodFinds • Stalls</title>
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg id="x-butt" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M480 606 270 816l-42-42 210-210-210-210 42-42 210 210 210-210 42 42-210 210 210 210-42 42-210-210Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stalls.html">Stalls</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+        
+        <div class="main-nav">
+            <div><a  href="index.html"><img class="nav-logo" src="images/navLogo.svg"></a></div>
+            
+            <div class="nav-links">
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="stalls.html">Stalls</a></li>
+                    <li class="hideOnMobile"><a href="map.html">Map</a></li>
+                    <li class="hideOnMobile"><a href="aboutus.html" class="active">About Us</a></li>  
+                
+                 <li class="menu-icon" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                    </svg>
+                </a>
+                </li> 
+            </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+
+    <div class="stalls-banner">
+        <div class="search-placeholder">
+            <div class="searchbar">
+                <img src="images/search-icon.svg" class="search-icon" alt="">
+                <input type="text" class="search" id="searchInput" placeholder="Search for food, stalls, and dishes here...">
+            </div>
+        </div>
+            <div class="banner-info">
+                <h1 class="stalls-header">Saura’s Hall Food Stalls</h1>
+                <p class="stalls-descrip">Browse and explore all the stalls available in Ateneo de Zamboanga University’s Saura’s Hall and Saura’s Extention.</p>
+                <a href="map.html" id="cta-browse-stalls">View Map <img src="images/double-arrow.svg" class="arrow-icon" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="food-stalls" id="foodStalls">
+        <div class="stall-header">
+            <h1>1st Floor - Saura's Hall</h1>
+        </div>
+        
+        <div class="stalls-group" id="stallsGroup">
+
+        </div> 
+
+    </div>
+
+    <div class="food-stalls" id="foodStalls">
+        <div class="stall-header">
+            <h1>2nd Floor - Saura's Hall</h1>
+        </div>
+        
+        <div class="stalls-group2" id="stallsGroup2">
+            
+        </div> 
+        
+    </div>
+
+    <footer class="footer" id="footer">
+
+        <div  class="footer-container">
+
+            <div class="footer-brand">
+
+                <img src="images/SUBMARK.svg"  class="footer-submark">
+                <h1>Food Finds</h1>
+                <p>Atenean Food At Your Fingertips</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <!-- temporary file names -->
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stalls.html">Stalls</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contacts">
+
+                <h3>Contact Us</h3>
+
+                <ul>
+                    <li>Ateneo de Zamboanga University, La Purisima 7000</li>
+                    <li>(+63) 926 3876 385</li>
+                    <li>co250178@adzu.edu.ph</li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+    </footer>
+
+    <script src="search-systemStalls.js"></script>
+</body>
+</html>

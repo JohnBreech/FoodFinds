@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="map.css">
+    <title>FoodFinds • Saura's Map</title>
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg id="x-butt" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M480 606 270 816l-42-42 210-210-210-210 42-42 210 210 210-210 42 42-210 210 210 210-42 42-210-210Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stalls.html">Stalls</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="index.html"><img class="nav-logo" src="images/navLogo.svg"></a></li>
+            
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="stalls.html">Stalls</a></li>
+            <li class="hideOnMobile"><a href="map.html">Map</a></li>
+            <li class="hideOnMobile"><a href="aboutus.html" class="active">About Us</a></li>
+
+            <li class="menu-icon" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="placeholder">
+        <div class="header">
+            <h2>Saura's Hall</h2>
+            <h1>Map and Floor Plan</h1>
+            <p>Know exactly where to go before the lunch rush hits.</p>
+        </div>
+
+        <div class="floors">
+            <div class="first-floor">
+                <div class="map-image">
+                    <img src="images/first-floor-sauras.svg" alt="Floor Plan of Saura's Hall First Floor as of 2025">
+                </div>
+
+                <div class="map-info">
+                    <h1 class="floor-header">1st Floor</h1>
+                    <p class="floor-descrip">The 1st Floor of the Saura’s Hall Consists of 16 Stalls:</p>
+
+                    <ul>
+                        <li>• Alcui's Foods</li>
+                        <li>• Healthy Options</li>
+                        <li>• La Vivienda</li>
+                        <li>• Papito's Family Restaurant</li>
+                        <li>• Food Trip</li>
+                        <li>• Mang Tinapay</li>
+                        <li>• Carrson's</li>
+                        <li>• Matcha Cafe</li>
+                        <li>• Creamery Rock</li>
+                        <li>• Rosmin Snack House</li>
+                        <li>• Jacky Chow</li>
+                        <li>• Turks</li>
+                        <li>• Bread and Beyond</li>
+                        <li>• Dew's Tea House Takoyaki</li>
+                        <li>• Sizzling Hut</li>
+                        <li>• Chick's N Gravy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="second-floor">
+                <div class="map-info">
+                    <h1 class="floor-header">2nd Floor</h1>
+                    <p class="floor-descrip">The 2nd Floor of the Saura’s Hall Consists of 7 Stalls:</p>
+
+                    <ul>
+                        <li>• KK Food Station</li>
+                        <li>• Gobble Haus</li>
+                        <li>• Snackville</li>
+                        <li>• Auntie Zeny's</li>
+                        <li>• EasyBite</li>
+                        <li>• The K&T</li>
+                        <li>• Syd's MilkTea</li>
+                    </ul>
+                </div>
+
+                <div class="map-image">
+                    <img src="images/second-floor-sauras.svg" alt="Floor Plan of Saura's Hall Second Floor as of 2025">
+                </div>
+            </div>
+            </div>
+
+            <div class="sauras-extention">
+                <div class="map-image">
+                    <img src="images/sauras-extension.svg" alt="Floor Plan of Saura's Extension as of 2025">
+                </div>
+
+                <div class="map-info">
+                    <h1 class="floor-header">1st Floor (Saura's Extension)</h1>
+                    <p class="floor-descrip">The 1st Floor Extension of the Saura’s Hall Consists of 4 Stalls from the Ateneo de Zamboanga EntreHub:</p>
+
+                    <ul>
+                        <li>• Three Sixty Degrees</li>
+                        <li>• FunSpud</li>
+                        <li>• Crunchies</li>
+                        <li>• Good Chicks</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+
+        <div  class="footer-container">
+
+            <div class="footer-brand">
+
+                <img src="images/SUBMARK.svg"  class="footer-submark">
+                <h1>Food Finds</h1>
+                <p>Atenean Food At Your Fingertips</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <!-- temporary file names -->
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stalls.html">Stalls</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contacts">
+
+                <h3>Contact Us</h3>
+
+                <ul>
+                    <li>Ateneo de Zamboanga University, La Purisima 7000</li>
+                    <li>(+63) 926 3876 385</li>
+                    <li>co250178@adzu.edu.ph</li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+    </footer>
+
+    
+    <!-- IMAGE MODAL DIV -->
+    <div id="imgModal" class="img-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+
+        function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+
+    // ===== IMAGE MODAL ===== //
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close-modal");
+
+    // Select all map images
+    const images = document.querySelectorAll(".map-image img");
+
+    images.forEach(img => {
+        img.addEventListener("click", () => {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        });
+    });
+
+    // Close modal on X click
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // Close on outside click
+    modal.onclick = function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    </script>
+
+</body>
+
+</html>

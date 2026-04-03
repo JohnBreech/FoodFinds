@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" href="images/favicon.svg">
+    <title>FoodFinds • Home</title>
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg id="x-butt" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M480 606 270 816l-42-42 210-210-210-210 42-42 210 210 210-210 42 42-210 210 210 210-42 42-210-210Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stalls.html">Stalls</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+        
+        <div class="main-nav">
+            <div><a  href="index.html"><img class="nav-logo" src="images/navLogo.svg"></a></div>
+            
+            <div class="nav-links">
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="stalls.html">Stalls</a></li>
+                    <li class="hideOnMobile"><a href="map.html">Map</a></li>
+                    <li class="hideOnMobile"><a href="aboutus.html" class="active">About Us</a></li>  
+                
+                 <li class="menu-icon" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                    </svg>
+                </a>
+                </li> 
+            </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!--BANNER-->
+    <div class="banner">
+        <div class="logo-tagline">
+            <img src="images/LOGOFULL_left.svg" alt="" id="logo-left">
+            <img src="images/LOGOFULL_center.svg" alt="" id="logo-center">
+            <div class="cta-buttons">
+                <a href="stalls.html" id="cta-browse-stalls">Browse Stalls</a>
+                <a href="aboutus.html" id="cta-learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!--SEARCH-->
+    <div class="search-placeholder">
+        <div class="searchbar">
+            <img src="images/search-icon.svg" class="search-icon" alt="">
+            <input type="text" class="search" id="searchInput" placeholder="Search for food, stalls, and dishes here...">
+        </div>
+    </div>
+
+    <!--MAP-->`
+    <div class="map-shortcut">
+        <div class="map-icon">
+            <h1>Saura's Hall Map</h1>
+            <p>Know exactly where to go before the lunch rush hits.</p>
+            <a href="map.html"><button class="cta-view-map" id="ctaViewMap">View Map <img src="images/double-arrow.svg" class="arrow-icon" alt=""></button></a>
+        </div>
+    </div>
+
+    <!--FOOD STALLS-->
+    <div class="food-stalls" id="foodStalls">
+        <div class="stall-header">
+            <h1>Food Stalls</h1>
+            <span><a href="stalls.html">See all</a></span>
+        </div>
+        <div class="stalls-group">
+
+            <div class="stall-card"> <!--repeat this div for each stall-->
+                <div class="stall-image">
+                    <img src="images/stalls/matcha_cafe_front_image.jpg" alt="Matcha Cafe Front Image">
+                </div>
+                <div class="stall-info">
+                    <h2 class="stall-name">Matcha Cafe</h2>
+                    <p class="operating-hrs">8:00am - 5:00pm</p>
+                    <p class="price-location">₱₱₱ | First Floor, Right Side</p>
+                </div>
+            </div>
+            
+            <div class="stall-card">
+                <div class="stall-image">
+                    <img src="images/stalls/lavivienda.jpg" alt="">
+                </div>
+                <div class="stall-info">
+                    <h2 class="stall-name">Grilled Shawarma (La Vivienda)</h2>
+                    <p class="operating-hrs">8:00am - 5:00pm</p>
+                    <p class="price-location">₱₱ |First Floor, Left Side</p>
+                </div>
+            </div>
+
+            <div class="stall-card">
+                <div class="stall-image">
+                    <img src="images/stalls/alcuis.svg" alt="">
+                </div>
+                <div class="stall-info">
+                    <h2 class="stall-name">Alcuis Food</h2>
+                    <p class="operating-hrs">8:00am - 5:00pm</p>
+                    <p class="price-location">₱₱ |First Floor, Left Side</p>
+                </div>
+            </div>
+
+            <div class="stall-card">
+                <div class="stall-image">
+                    <img src="images/stalls/gobblehaus.svg" alt="">
+                </div>
+                <div class="stall-info">
+                    <h2 class="stall-name">Gobble House</h2>
+                    <p class="operating-hrs">8:00am - 5:00pm</p>
+                    <p class="price-location">₱₱ |Second Floor</p>
+                </div>
+            </div>
+
+            <div class="stall-card">
+                <div class="stall-image">
+                    <img src="images/stalls/easybite.svg" alt="EasyBite Image">
+                </div>
+                <div class="stall-info">
+                    <h2 class="stall-name">Easy Bite</h2>
+                    <p class="operating-hrs">8:00am - 5:00pm</p>
+                    <p class="price-location">₱₱ |Second Floor</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--CATEGORIES-->
+    <div class="categories" id="categories">
+        <div class="category-header">
+            <h1>Categories</h1>
+        </div>
+
+        <div class="category-group">
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/pizza.jpg" alt="Pizza">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Pizza</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/beverages.webp" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Beverages</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/burgers.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Burgers</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/chicken.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Chicken</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/coffee.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Coffee</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/shawarma.webp" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Shawarma</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/filipino.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Filipino</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/desserts.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Desserts</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/steak.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Beef</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/bread.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Bread</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/fries.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Fries</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/siomai.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Siomai</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/halal.png" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Halal</h3>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/categories/fruits.jpg" alt="">
+                </div>
+                <div class="category-info">
+                    <h3 class="category-name">Fruits</h3>
+                </div>
+            </div>
+
+    </div>
+    </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="footer">
+
+        <div  class="footer-container">
+
+            <div class="footer-brand">
+
+                <img src="images/SUBMARK.svg"  class="footer-submark">
+                <h1>Food Finds</h1>
+                <p>Atenean Food At Your Fingertips</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <!-- temporary file names -->
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stalls.html">Stalls</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contacts">
+
+                <h3>Contact Us</h3>
+
+                <ul>
+                    <li>Ateneo de Zamboanga University, La Purisima 7000</li>
+                    <li>(+63) 926 3876 385</li>
+                    <li>co250178@adzu.edu.ph</li>
+                </ul>
+
+            </div>  
+
+        </div>
+        
+    </footer>
+
+    <script src="search-system.js"></script>
+    
+</body>
+</html>

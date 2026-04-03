@@ -1,0 +1,502 @@
+/* Fonts (Refer to the Figma Page for Proper Font Variety */
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("fonts/Poppins-SemiBold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url("fonts/Poppins-ExtraBold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-Black;
+    src: url("fonts/Nunito-Black.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-Medium;
+    src: url("fonts/Nunito-Medium.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-Bold;
+    src: url("fonts/Nunito-Bold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-ExtraBold;
+    src: url("fonts/Nunito-ExtraBold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Nunito-SemiBold;
+    src: url("fonts/Nunito-SemiBold.ttf") format(truetype);
+}
+
+:root {
+    --primary-color: #006DA8;
+    --primary-color2: #00517D;
+    --secondary-color: #FF9E1E;
+    --secondary-color2: #E28101;
+    --accent-color: #FDFAF5;
+    --accent-color2: #BDB4A7;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebf0f3;
+}
+
+/*NAVIGATOR*/
+/* ---------- NAVIGATION ---------- */
+nav {
+    background-color: var(--primary-color); /* Updated to Blue to match image top bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    max-width: 150px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    height: 60px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white; /* Text white to contrast blue nav */
+    font-family: "Nunito-SemiBold", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--secondary-color);
+}
+
+nav li:first-child {
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+/* Sidebar (Mobile) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh; 
+    width: 250px;
+    z-index: 99999;
+    background-color: var(--primary-color2);
+    background: hsl(201, 100%, 33%, 0.8); /* softer glass look */
+    box-shadow: -10px 0 5px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar a {
+    color: var(--accent-color); /* Sidebar links dark */
+    width: 100%;
+}
+
+#x-butt {
+    fill: var(--accent-color);
+}
+
+.menu-icon a svg {
+    fill: var(--accent-color);
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile { display: none; }
+}
+@media (min-width: 801px) {
+    .menu-icon { display: none; }
+}
+
+
+
+/*BANNER*/
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 100%;
+    height: auto;
+    padding: 2rem 9rem 4rem;
+    background-image: url(images/banner-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.stalls-banner {
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 2rem 9rem 4rem;
+    background-image: url(images/stall_banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search-placeholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .searchbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .search-icon {
+        position: absolute; 
+        left: 25px; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        width: 1.5rem; 
+        height: 1.5rem; 
+        opacity: 0.6; 
+    }
+    .search {
+        font-family: Nunito-Medium;
+        width: 100%;
+        padding: 1rem 1rem;
+        padding-left: 4.4rem;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+    .banner-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+    }
+    .stalls-header {
+        margin-top: 1.8rem;
+        text-align: center;
+        font-size: 3rem;
+        font-family: Poppins-SemiBold;
+        background-image: linear-gradient(90deg, #45BEFF, var(--accent-color));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .stalls-descrip {
+        text-align: center;
+        font-size: 1rem;
+        font-family: Poppins-SemiBold;
+        color: var(--accent-color);
+    }
+    #cta-browse-stalls {
+        font-family: Nunito-Bold;
+        display: flex;
+        margin-top: 1rem;
+        padding: 0.7rem 0.7rem;
+        background-color: var(--primary-color);
+        transition: background-color 0.3s ease, color 0.3s ease;
+        color: var(--accent-color);
+        border-radius: 10px;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        
+    }
+     #cta-browse-stalls:hover {
+        background-color: var(--primary-color2);
+    }
+    @media screen and (max-width: 728px) {
+        .stalls-banner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 3rem 5rem;
+        }
+        .searchbar {
+            width: 100%;
+        }
+        .search {
+            font-size: 0.7rem;
+            padding: 0.4rem 0.4rem;
+            padding-left: 3.8rem;
+        }
+        .search-icon {
+            width: 1rem;
+            height: 1rem;
+        }
+        .stalls-header {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .stalls-descrip {
+            font-size: 0.6rem;
+        }
+        #cta-browse-stalls {
+            font-size: 0.5rem;
+            padding: 0.4rem 0.4rem;
+            align-items: center;
+        }
+        .arrow-icon {
+            position: static;
+            padding-left: 0;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+/* STALLS SECTION */
+.food-stalls {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    background-color: #ebf0f3;
+}
+    .stall-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.7rem;
+    }
+
+    .stall-header h1 {
+        font-family: Poppins-SemiBold;
+        font-size: 1.5rem;
+        background-image: linear-gradient(90deg, #B06604, #FF9E1E);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .stalls-group {
+        display: grid;
+        width: 100%;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        align-items: start;
+    }
+    .stalls-group2 {
+        display: grid;
+        width: 100%;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        align-items: start;
+    }
+
+    .stall-card {
+        border-radius: 15px;
+        background-color: #112936;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .stall-image {
+        width: 100%;
+        height: 160px;
+    }
+
+    .stall-image img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .stall-info {
+        padding: 12px;
+        background-color: #FFFFFF;
+        color: #112936;
+        font-family: Nunito-Medium;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .stall-name {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .operating-hrs,
+    .price-location {
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 728px) {
+        .stalls-group {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .stalls-group2 {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .food-stalls {
+            padding: 2rem 1rem;
+        }
+    }
+
+
+.hide {
+    display: none;
+}
+
+.footer {
+    margin-top: 5rem;
+    color: white;
+    width: 100%;
+    background-image: url(images/footer-bg.svg);
+    background-color: #00517D;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 5rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 2rem 5rem;
+  margin: auto;
+  align-items: center;
+}
+
+.footer-submark {
+    max-width: 150px;
+}
+
+.footer h1{
+    font-family: Poppins-SemiBold;
+}
+
+.footer h3{
+    font-family: Poppins-SemiBold;
+}
+
+.footer p {
+    font-family: Nunito-Medium;
+}
+
+.footer-links ul li {
+    font-family: Nunito-Medium;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-contacts ul li {
+    font-family: Nunito-Medium;
+    list-style: none;
+    margin-top: 1rem;
+}
+@media (max-width: 992px) {
+    .footer {
+        padding: 2rem 3rem;
+    }
+
+    .footer-container {
+        padding: 2rem 3rem;
+        gap: 30px;
+    }
+}
+
+/* MOBILE (<= 768px) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-links, 
+    .footer-contacts {
+        text-align: center;
+    }
+
+    .footer-submark {
+        max-width: 120px;
+    }
+}
+@media (max-width: 728px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .footer-links, 
+    .footer-contacts {
+        text-align: left;
+    }
+
+    .footer-submark {
+        max-width: 120px;
+    }
+}

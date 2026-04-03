@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.svg"> 
+    <link rel="stylesheet" href="stalls-profile.css">
+    <title>Alcuis Food • Stall Profile</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg id="x-butt" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M480 606 270 816l-42-42 210-210-210-210 42-42 210 210 210-210 42 42-210 210 210 210-42 42-210-210Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="../stalls.html">Stalls</a></li>
+            <li><a href="../map.html">Map</a></li>
+            <li><a href="../aboutus.html">About Us</a></li>
+        </ul>
+
+        
+        <div class="main-nav">
+            <div><a  href="../homepage.html"><img class="nav-logo" src="../images/navLogo.svg"></a></div>
+            
+            <div class="nav-links">
+                <ul>
+                    <li class="hideOnMobile"><a href="../homepage.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="../stalls.html">Stalls</a></li>
+                    <li class="hideOnMobile"><a href="../map.html">Map</a></li>
+                    <li class="hideOnMobile"><a href="../aboutus.html" class="active">About Us</a></li>  
+                
+                 <li class="menu-icon" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                    </svg>
+                </a>
+                </li> 
+            </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="stalls-banner">
+        <div class="banner-inner">
+            <a class="back" href="../stalls.html">>> Back</a>
+            <h1 class="sauras">Saura's Hall Food Stalls</h1>
+        </div>
+
+        <div class="profile-full">
+            <img src="../images/stalls/alcuis.svg" class="stall-logo" onerror="this.src='../images/stalls/default.svg'" alt="Alcuis Food Logo">
+            
+            <div class="profile-info">
+                <p class="label">Stall Profile</p>
+                <h2>Alcuis Food | 1st Floor</h2>
+                <p class="details">
+                    Category: Filipino, Siomai, Beef, Chicken, Bread, Burgers, Coffee, Beverages <br>
+                    Operating Hours: 8am to 5pm <br>
+                    Location: Ateneo de Zamboanga University, La Purisima Campus, Saura's Hall, 1st Floor <br>
+                </p>
+                <a href="../map.html" id="cta-view-map">View Map <img src="../images/double-arrow.svg" class="arrow-icon" alt=""></a>
+            </div>   
+        </div>
+    </div>
+
+    <div class="menu-section">
+
+        <h2 class="menu-title">Stall Menu</h2>
+
+        <div class="menubox">
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_tocino.jpg" alt="Tocino/Longganiza Shanghai Rice">
+                </div>
+                <div class="menu-info">
+                    <h4>Tocino/Longganiza Shanghai Rice</h4>
+                    <p class="price">₱70.00 (+₱15 w/ Egg)</p>
+                    <p>Choice of Tocino or Longganiza served with lumpia shanghai and rice.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_beefTapa.jpg" alt="Beef Tapa Rice">
+                </div>
+                <div class="menu-info">
+                    <h4>Beef Tapa Rice</h4>
+                    <p class="price">₱70.00 (+₱15 w/ Egg)</p>
+                    <p>Savory cured beef tapa served with rice.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_Pastil.jpg" alt="Chicken Pastil Shanghai Rice">
+                </div>
+                <div class="menu-info">
+                    <h4>Chicken Pastil Shanghai Rice</h4>
+                    <p class="price">₱70.00 (+₱15 w/ Egg)</p>
+                    <p>Chicken pastil served with lumpia shanghai and rice.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_SiomaiRice.jpg" alt="Siomai Rice">
+                </div>
+                <div class="menu-info">
+                    <h4>Siomai Rice</h4>
+                    <p class="price">₱65.00 (+₱15 w/ Egg)</p>
+                    <p>Steamed siomai served with rice and chili paste.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_Waffle.jpg" alt="Belgian Waffle">
+                </div>
+                <div class="menu-info">
+                    <h4>Belgian Waffle</h4>
+                    <p class="price">₱50.00</p>
+                    <p>Classic hot belgian waffle.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_Siomai.jpg" alt="Special Siomai">
+                </div>
+                <div class="menu-info">
+                    <h4>Special Siomai</h4>
+                    <p class="price">₱40 (5pcs) | ₱50 (7pcs)</p>
+                    <p>Steamed siomai served with special chili paste.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_eggSandwich.jpg" alt="Fried Egg Sandwich">
+                </div>
+                <div class="menu-info">
+                    <h4>Fried Egg Sandwich</h4>
+                    <p class="price">₱40.00</p>
+                    <p>Egg sandwich with cheese and special sauce.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_Burgir.jpg" alt="Beefy Burger">
+                </div>
+                <div class="menu-info">
+                    <h4>Beefy Burger</h4>
+                    <p class="price">₱40.00</p>
+                    <p>Beef burger patty served with cheese and special sauce.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_choco.jpg" alt="Coffee / Choco">
+                </div>
+                <div class="menu-info">
+                    <h4>Hot/Cold Coffee or Choco</h4>
+                    <p class="price">₱45.00</p>
+                    <p>Your choice of hot or cold coffee/chocolate drink.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_IcedTea.jpg" alt="Red Tea / Iced Tea">
+                </div>
+                <div class="menu-info">
+                    <h4>Red Tea / Iced Tea</h4>
+                    <p class="price">₱30.00</p>
+                    <p>Refreshing cold tea drink.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="../images/food/Alcuis_soda.jpg" alt="Soft Drinks">
+                </div>
+                <div class="menu-info">
+                    <h4>Soft Drinks</h4>
+                    <p class="price">₱40.00</p>
+                    <p>Coke, Royal, or Sprite.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <img src="../images/SUBMARK.svg" class="footer-submark">
+                <h5>Food Finds</h5>
+                <p>Atenean Food At Your Fingertips</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="../homepage.html">Home</a></li>
+                    <li><a href="../stalls.html">Stalls</a></li>
+                    <li><a href="../map.html">Map</a></li>
+                    <li><a href="../aboutus.html">About Us</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contacts">
+
+                <h3>Contact Us</h3>
+
+                <ul>
+                    <li>Ateneo de Zamboanga University, La Purisima 7000</li>
+                    <li>(+63) 926 3876 385</li>
+                    <li>co250178@adzu.edu.ph</li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
